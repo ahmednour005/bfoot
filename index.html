@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">B.SHOP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bakery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="banner-title">
+                        <h1>We Are Bakery Shop</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                        <a href="#" onclick="toggle();"> <i class="fa fa-play"></i></a>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="img/55.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="img/4.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="img/3.png" alt="">
+                        <p>Cupcake</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="img/1.png" alt="">
+                        <p>Biscuit</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="img/5.png" alt="">
+                        <p>Green Seck</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="trailer">
+        <iframe src="https://www.youtube-nocookie.com/embed/voLuGOQzTCs?start=5" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <i onclick="toggle();" class=" fa fa-window-close"></i>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active');
+        }
+    </script>
+</body>
+
+
+</html>

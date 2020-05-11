@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-light{
+  background-color: #f4f4f6 !important;
+  padding: 10px 200px;
+}
+.navbar-light .navbar-brand{
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.navbar-light .nav-link{
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+header{
+  background-color: #f4f4f6;
+}
+header img{
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+.banner-title h1{
+  margin-top: 20%;
+  color:#5a5a5a;
+  font-size: 46px;
+}
+.banner-title p{
+  margin-bottom: 25px;
+  line-height: 24px;
+  color:#777;
+}
+.banner-title a{
+  background-color: #dca079;
+  color:#FFF;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  float: left;
+}
+.banner-title hr{
+  width: 30px;
+  height: 2px;
+  display: inline-block;
+  margin-left: 15px;
+  background-color: #bfbfbf;
+  margin-top: 30px;
+}
+section img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+section .item{
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 15px 0 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: -60px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+section .item:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+} 
+section p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  color:#5a5a5a;
+}
+.trailer{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(33,32,38,1) 0%,rgba(98,52,5,1) 16%,rgba(33,32,38,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.trailer .fa-window-close{
+  color:#FFF;
+  font-size: 48px;
+  position: absolute;
+  top:10px;
+  cursor: pointer;
+}
+.trailer iframe{
+  width: 70%;
+  height: 500px;
+}
+
+.trailer.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width:992px){
+  .bg-light{
+    padding: 10px 50px;
+  }
+}
+@media (max-width:768px){
+  header img{
+    height: 300px;
+  }
+  .banner-title h1{
+    margin-top: 10%;
+  }
+  section .item{
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    margin-top: 20px;
+  }
+}
